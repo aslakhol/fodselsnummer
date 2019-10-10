@@ -1,5 +1,5 @@
-export const destructFodselsnummer = fn => {
-  return fn.split("").map(Number);
+export const stringToNumbers = str => {
+  return str.split("").map(Number);
 };
 
 export const calculateFirstControl = fn => {
@@ -44,3 +44,17 @@ export const calculateSecondControl = fn => {
     return 11 - rest;
   }
 };
+
+export const prepareDob = dob => {
+  const day = combineToNumber(dob.slice(0, 2));
+  const month = combineToNumber(dob.slice(2, 4));
+  const year = combineToNumber(dob.slice(4, 6));
+
+  return [day, month, year];
+};
+
+const combineToNumber = arr => {
+  return Number(arr.join(""));
+};
+
+export const daysInMonths = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];

@@ -1,25 +1,12 @@
-const destructDob = dobString => {
-  const dayString = dobString.substring(0, 2);
-  const monthString = dobString.substring(2, 4);
-  const yearString = dobString.substring(4, 6);
-  const dayNum = parseInt(dayString);
-  const monthNum = parseInt(monthString);
-  const yearNum = parseInt(yearString);
+import { prepareDob, daysInMonths } from "./utils";
 
-  return [dayNum, monthNum, yearNum];
-};
-
-export const isValidDob = dobString => {
-  if (dobString.length !== 6) {
+export const isValidDob = dob => {
+  if (dob.length !== 6) {
     return false;
   }
-
-  const [day, month, year] = destructDob(dobString);
-
+  const [day, month, year] = prepareDob(dob);
   return isValidDay(day, month) && isValidMonth(month) && isValidYear(year);
 };
-
-const daysInMonths = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 export const isValidDay = (day, month) => {
   return 0 < day && day <= daysInMonths[month - 1];

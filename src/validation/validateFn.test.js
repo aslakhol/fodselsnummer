@@ -4,6 +4,9 @@ describe("isValidFodselsnummer", () => {
   it("returns true with valid fodselsnummer", () => {
     expect(isValidFodselsnummer("13033345296")).toBe(true);
   });
+  it("returns true with valid fodselsnummer", () => {
+    expect(isValidFodselsnummer("23074404421")).toBe(true);
+  });
   it("returns false with too long string", () => {
     expect(isValidFodselsnummer("13033223345296")).toBe(false);
   });

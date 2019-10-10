@@ -7,19 +7,22 @@ import {
 
 describe("isValidDob ", () => {
   it("returns true with valid date", () => {
-    expect(isValidDob("120969")).toEqual(true);
+    expect(isValidDob([0, 2, 0, 9, 6, 9])).toEqual(true);
+  });
+  it("returns true with valid date", () => {
+    expect(isValidDob([1, 2, 0, 9, 6, 9])).toEqual(true);
   });
   it("fails with to long string", () => {
-    expect(isValidDob("40s0393")).toEqual(false);
+    expect(isValidDob([4, 0, "s", 0, 3, 9, 3])).toEqual(false);
   });
   it("fails with invalid day", () => {
-    expect(isValidDob("550393")).toEqual(false);
+    expect(isValidDob([5, 5, 0, 3, 9, 3])).toEqual(false);
   });
   it("fails with invalid month", () => {
-    expect(isValidDob("221393")).toEqual(false);
+    expect(isValidDob([2, 2, 1, 3, 9, 3])).toEqual(false);
   });
   it("fails with invalid year", () => {
-    expect(isValidDob("2210-2")).toEqual(false);
+    expect(isValidDob([2, 2, 1, 0, -2])).toEqual(false);
   });
 });
 

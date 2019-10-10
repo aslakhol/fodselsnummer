@@ -1,12 +1,9 @@
-import {
-  destructFodselsnummer,
-  calculateFirstControl,
-  calculateSecondControl
-} from "./utils";
+import { calculateFirstControl, calculateSecondControl } from "./utils";
 
 export const isValidControl = fodselsnummer => {
-  const fnArray = destructFodselsnummer(fodselsnummer);
-  return isValidFirstControl(fnArray) && isValidSecondControl(fnArray);
+  return (
+    isValidFirstControl(fodselsnummer) && isValidSecondControl(fodselsnummer)
+  );
 };
 
 const isValidFirstControl = fodselsnummer => {

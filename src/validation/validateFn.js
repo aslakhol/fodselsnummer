@@ -1,15 +1,20 @@
 import { isValidDob } from "./validateDob";
 import { isValidControl } from "./validateControl";
+import { stringToNumbers } from "./utils";
 
-export const isValidFodselsnummer = fnString => {
-  if (fnString.length !== 11) {
+export const isValidFodselsnummer = fodselsnummerString => {
+  if (fodselsnummerString.length !== 11) {
     return false;
   }
-  const dob = fnString.substring(0, 6);
-  const individ = fnString.substring(6, 9);
-  const control = fnString.substring(9, 12);
+  const fodselsnummerArray = stringToNumbers(fodselsnummerString);
+  const dob = fodselsnummerArray.slice(0, 6);
+  const individ = fodselsnummerString.substring(6, 9);
 
-  return isValidDob(dob) && isValidIndivid(individ) && isValidControl(fnString);
+  return (
+    isValidDob(dob) &&
+    isValidIndivid(individ) &&
+    isValidControl(fodselsnummerArray)
+  );
 };
 
 export const isValidIndivid = individ => {
