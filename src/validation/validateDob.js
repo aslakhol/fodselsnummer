@@ -19,7 +19,6 @@ export const isValidDob = dobString => {
   return isValidDay(day, month) && isValidMonth(month) && isValidYear(year);
 };
 
-// I'm deciding that all instances of february can have 29 days because I don't want to handle leap years.
 const daysInMonths = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
 export const isValidDay = (day, month) => {
