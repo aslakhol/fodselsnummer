@@ -1,7 +1,7 @@
 import { isValidDob } from "./validateDob";
 import { isValidControl } from "./validateControl";
 
-const isValidFn = fnString => {
+export const isValidFodselsnummer = fnString => {
   if (fnString.length !== 11) {
     return false;
   }
@@ -9,9 +9,7 @@ const isValidFn = fnString => {
   const individ = fnString.substring(6, 9);
   const control = fnString.substring(9, 12);
 
-  isValidDob(dob);
-  isValidIndivid(individ);
-  isValidControl(control);
+  return isValidDob(dob) && isValidIndivid(individ) && isValidControl(fnString);
 };
 
 export const isValidIndivid = individ => {
