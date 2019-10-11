@@ -5,7 +5,9 @@ import Fodselsnummer from "./Fodselsnummer";
 function App() {
   return (
     <div className="App">
-      <Fodselsnummer />
+      <div className="wrapper">
+        <Fodselsnummer />
+      </div>
     </div>
   );
 }
