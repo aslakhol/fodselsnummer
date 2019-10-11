@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "classnames": "^2.2.5",
+    "classnames": "^2.2.6",
     "lodash.throttle": "^4.1.1",
-    "nav-frontend-core": "^4.0.5",
+    "nav-frontend-core": "^4.0.10",
     "nav-frontend-js-utils": "^1.0.6",
     "nav-frontend-knapper": "^1.0.15",
     "nav-frontend-knapper-style": "^0.3.14",
@@ -11,9 +11,12 @@
     "nav-frontend-skjema-style": "^1.0.10",
     "nav-frontend-typografi": "^2.0.6",
     "nav-frontend-typografi-style": "^1.0.10",
+    "nav-frontend-veileder": "^2.0.12",
+    "nav-frontend-veileder-style": "^2.0.9",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
-    "react": "^16.4.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
     "react-dom": "^16.4.2",
     "react-scripts": "^3.0.0"
   },

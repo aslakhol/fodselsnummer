@@ -2612,7 +2612,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -6789,7 +6789,7 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-nav-frontend-core@^4.0.10, nav-frontend-core@^4.0.5:
+nav-frontend-core@^4.0.10:
   version "4.0.10"
   resolved "https://registry.yarnpkg.com/nav-frontend-core/-/nav-frontend-core-4.0.10.tgz#efb05bdc9c5cf20d41d4b3a13e764be7df915392"
   integrity sha512-bMdl7PB2GrqcliWkv4Sz6iZGBJbWuJ8ZhLBRfnu/6cESytW71x/py9ZTQ8sKT9Vh7M+cugW80Q89I+G7pUNk2w==
@@ -6835,6 +6835,16 @@ nav-frontend-typografi@^2.0.6:
   version "2.0.15"
   resolved "https://registry.yarnpkg.com/nav-frontend-typografi/-/nav-frontend-typografi-2.0.15.tgz#f6dc5c8a430556da1e5c61efa045d816d437d4c5"
   integrity sha512-PK6hHwBvRqjb2CHFyG/ryhZb8x+E9K0DdjjcIUWeCXHImIIdZFno8zXkL9Bvu96f8BSPMMPBF5xJgCKdBsaDiw==
+
+nav-frontend-veileder-style@^2.0.9:
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/nav-frontend-veileder-style/-/nav-frontend-veileder-style-2.0.9.tgz#096baf53dd5f47a1cde318cf5b3dab3209abb8ac"
+  integrity sha512-4p89zhuptBV3QSMUFyb+6pAbv+K1WyDCvTRZJQVwSP2zBSBQVsGfEuKMq27iRY6wi6jQs0pWBv0dSwSUnqxL7A==
+
+nav-frontend-veileder@^2.0.12:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/nav-frontend-veileder/-/nav-frontend-veileder-2.0.12.tgz#0260c03896318b4f15bab6d725f218b7000ee9a5"
+  integrity sha512-0WQ6tj8SnXJyNczOLwfel+pv56yORUaZ9z7/IMBlAyp8rIQeJUxAmDVMSstWONmdgQ4Z1BrvhxHuxkVUJi2iKw==
 
 needle@^2.2.1:
   version "2.2.4"
@@ -8755,7 +8765,7 @@ react-scripts@^3.0.0:
   optionalDependencies:
     fsevents "2.0.7"
 
-react@^16.4.2:
+react@^16.10.2:
   version "16.10.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.10.2.tgz#a5ede5cdd5c536f745173c8da47bda64797a4cf0"
   integrity sha512-MFVIq0DpIhrHFyqLU0S3+4dIcBhhOvBE8bJ/5kHPVOVaGdo0KuiQzpcjCPsf585WvhypqtrMILyoE2th6dT+Lw==
