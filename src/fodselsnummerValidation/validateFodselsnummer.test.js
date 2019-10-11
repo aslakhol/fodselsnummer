@@ -1,4 +1,4 @@
-import { isValidIndivid, isValidFodselsnummer } from "./validateFn";
+import { isValidIndivid, isValidFodselsnummer } from "./validateFodselsnummer";
 
 describe("isValidFodselsnummer", () => {
   it("returns true with valid fodselsnummer", () => {
